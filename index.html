@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> form ASHIQ HUSSAIN </title>
+   <style>
+    body {
+  background-color: #343434;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.form input {
+  padding: 20px 0 10px;
+}
+
+.form input::-webkit-outer-spin-button,
+.form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px  gray inset !important;
+    padding-left: 10px;
+}
+
+.form input,
+.form textarea {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #adb5bd;
+  background-color: #343434;
+  color: #fff;
+  outline: none;
+  width: 350px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;  
+  transition: all 0.3s;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  transition: all 0.3s;
+}
+
+.form textarea {
+  padding: 10px 0;
+  resize: none;
+  overflow: hidden;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-bottom: 1px solid #007fff;
+  padding-left: 10px;
+}
+
+.form input:focus::placeholder,
+.form textarea:focus::placeholder {
+  color: #0080ffee;
+}
+
+#btn-submit,
+#btn-reset {
+  padding: 10px 25px;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  border: none;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+#btn-submit {
+  color: #fff;
+  background-color: #007fff;
+  margin-right: 10px;
+}
+
+#btn-submit:hover {
+  background-color: #fff;
+  color: #007fff;
+  cursor: pointer;
+}
+
+#btn-reset:hover {
+  color: #fff;
+  background-color: #007fff;
+  cursor: pointer;
+}
+h4{
+  color: rgba(184, 19, 19, 0.763);
+}
+   </style>
+</head>
+<body>
+    <center>
+    <div>
+    <form action="./component/submit.html" class="form">
+
+            <br>
+            <input  type="text" id="name" required placeholder="First Name">
+            <br>
+            <br>
+            <input type="text" placeholder="Last name" >
+            <br>
+            <br>
+            <input  type="email" required placeholder="Email">
+            <br>
+            <br>
+            <input  type="password"  required placeholder="Password">
+            <br>
+            <br>
+            <input  type="tel" placeholder="Number">
+            <br>
+            <br>
+           <textarea  cols="32" rows="6" placeholder="Message"></textarea>
+           <br>
+           <br>
+        <table>
+            <tr>
+                <td>
+                    <input class="btn-submit" type="submit" name="submit">
+                </td>
+                <td>
+                    <input class="btn-reset" type="reset" value="Cancle">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+
+        <footer>
+            <h4>copyright : ASHIQ HUSSAIN </h4>
+        </footer>
+    </form>
+</div>
+</center>
+</body>
+</html>
